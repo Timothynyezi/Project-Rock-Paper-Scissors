@@ -1,6 +1,12 @@
 console.log("Hello,World");
 
 function getComputerChoice(){
+    
+}
+
+//console.log(getComputerChoice());
+
+function getHumanChoice(){
     let choice1 = "rock";
     let choice2 = "paper";
     let choice3 = "scissors";
@@ -21,10 +27,5 @@ function getComputerChoice(){
     //}
     
     return selectChoice;
-}
 
-//console.log(getComputerChoice());
-
-function getHumanChoice(){
-    
 }
