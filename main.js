@@ -7,5 +7,6 @@ function getComputerChoice(choice){
 
     let selectChoice = prompt("Chose one of the option Rock, Paper, Scissor: ");
     
+    
     return choice;
 }
