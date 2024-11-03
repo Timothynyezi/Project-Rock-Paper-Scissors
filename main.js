@@ -23,4 +23,8 @@ function getComputerChoice(){
     return selectChoice;
 }
 
-console.log(getComputerChoice());
+//console.log(getComputerChoice());
+
+function getHumanChoice(){
+    
+}
