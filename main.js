@@ -16,9 +16,9 @@ function getComputerChoice(){
     if(selectChoice === choice3){
         console.log(choice3);
     }
-    else{
-        console.log("Choose a valid option");
-    }
+    //else{
+        //console.log("Choose a valid option");
+    //}
     
     return selectChoice;
 }
