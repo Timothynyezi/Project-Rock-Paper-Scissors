@@ -1,6 +1,9 @@
 console.log("Hello,World");
 
 function getComputerChoice(){
+    let gameWords = ["rock", "paper", "scissors"];
+    console.log(gameWords[Math.floor(Math.random() * gameWords.length)]);
+    return gameWords;
     
 }
 
