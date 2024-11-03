@@ -7,7 +7,7 @@ function getComputerChoice(){
     
 }
 
-console.log(getComputerChoice());
+//console.log(getComputerChoice());
 
 function getHumanChoice(){
     let choice1 = "rock";
@@ -32,4 +32,14 @@ function getHumanChoice(){
     return selectChoice;
 }
 
-console.log(getHumanChoice());
+//console.log(getHumanChoice());
+
+function gamePlay(){
+    if(getComputerChoice === "rock" && getHumanChoice == "scissors"){
+        console.log("rock breaks scissors /n")
+        console.log("computer wins")
+    }
+    else{
+        console.log("Human player wins")
+    }
+}
