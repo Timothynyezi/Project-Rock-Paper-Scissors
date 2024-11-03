@@ -7,7 +7,7 @@ function getComputerChoice(){
     
 }
 
-//console.log(getComputerChoice());
+console.log(getComputerChoice());
 
 function getHumanChoice(){
     let choice1 = "rock";
@@ -30,5 +30,6 @@ function getHumanChoice(){
     //}
     
     return selectChoice;
-
 }
+
+console.log(getHumanChoice());
