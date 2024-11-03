@@ -7,6 +7,10 @@ function getComputerChoice(choice){
 
     let selectChoice = prompt("Chose one of the option Rock, Paper, Scissor: ");
     
+    if(selectChoice === choice1){
+        console.log(choice1)
+    }
+    
     
     return choice;
 }
