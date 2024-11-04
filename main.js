@@ -52,3 +52,5 @@ function gamePlay(){
        playerTurn = confirm("Do you want to play again?");
     }   
 }
+
+gamePlay();
