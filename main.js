@@ -6,7 +6,7 @@ function getComputerChoice(){
     console.log(`Computer chose: ${choice}`)    
 }
 
-//console.log(getComputerChoice());
+
 
 function getHumanChoice(){
     let choice1 = "rock";
@@ -25,7 +25,6 @@ function getHumanChoice(){
     
 }
 
-//console.log(getHumanChoice());
 
 function gamePlay(){
     playerTurn = true;
