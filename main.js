@@ -16,12 +16,13 @@ function getHumanChoice(){
     let selectChoice = prompt("Chose one of the option Rock, Paper, Scissor: ");
     
     if(selectChoice === choice1 || selectChoice === choice2 || selectChoice === choice3){
-        console.log(`You chose: ${selectChoice}`);
-        
+        console.log(`You chose: ${selectChoice}`);   
+    }
+    else{
+        console.log(`Choose a valid option`);
+        return getHumanChoice();
     }
     
-    
-    return selectChoice;
 }
 
 //console.log(getHumanChoice());
