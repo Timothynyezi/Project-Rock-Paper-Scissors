@@ -25,6 +25,10 @@ function getHumanChoice(){
     
 }
 
+function determineWinner(getComputerChoice, getHumanChoice){
+    
+}
+
 
 function gamePlay(){
     playerTurn = true;
