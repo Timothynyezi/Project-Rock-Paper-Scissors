@@ -2,9 +2,8 @@ console.log("Hello,World");
 
 function getComputerChoice(){
     let gameWords = ["rock", "paper", "scissors"];
-    console.log(gameWords[Math.floor(Math.random() * gameWords.length)]);
-    return gameWords;
-    
+    const choice = gameWords[Math.floor(Math.random() * gameWords.length)]
+    console.log(`Computer chose: ${choice}`)    
 }
 
 //console.log(getComputerChoice());
@@ -35,11 +34,20 @@ function getHumanChoice(){
 //console.log(getHumanChoice());
 
 function gamePlay(){
-    if(getComputerChoice === "rock" && getHumanChoice == "scissors"){
-        console.log("rock breaks scissors /n")
-        console.log("computer wins")
+    playerTurn = true;
+    player1 = getComputerChoice();
+    player2 = getHumanChoice();
+
+    while(playerTurn) {
+        if(getComputerChoice === "rock" && getHumanChoice == "scissors"){
+            console.log("rock breaks scissors /n")
+            console.log("computer wins")
+        }
+        else{
+            console.log("Human player wins")
+        }
+
     }
-    else{
-        console.log("Human player wins")
-    }
+
+    
 }
