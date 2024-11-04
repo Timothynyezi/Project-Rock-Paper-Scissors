@@ -25,9 +25,17 @@ function getHumanChoice(){
     
 }
 
-function determineWinner(getComputerChoice, getHumanChoice){
-    if (computerChoice === getHumanChoice){
+function determineWinner(computerChoice, humanChoice) {
+    if (computerChoice === humanChoice) {
         console.log("It's a tie!");
+    } else if (
+        (computerChoice === "rock" && humanChoice === "scissors") ||
+        (computerChoice === "paper" && humanChoice === "rock") ||
+        (computerChoice === "scissors" && humanChoice === "paper")
+    ) {
+        console.log("Computer wins!");
+    } else {
+        console.log("You win!");
     }
 }
 
