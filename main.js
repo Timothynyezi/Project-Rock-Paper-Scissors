@@ -13,7 +13,7 @@ function getHumanChoice(){
     let choice2 = "paper";
     let choice3 = "scissors";
 
-    let selectChoice = prompt("Chose one of the option Rock, Paper, Scissor: ");
+    let selectChoice = prompt("Chose one of the options rock, paper, scissor: ");
     
     if(selectChoice === choice1 || selectChoice === choice2 || selectChoice === choice3){
         console.log(`You chose: ${selectChoice}`);   
