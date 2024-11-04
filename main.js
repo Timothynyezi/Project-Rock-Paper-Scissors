@@ -26,7 +26,9 @@ function getHumanChoice(){
 }
 
 function determineWinner(getComputerChoice, getHumanChoice){
-    
+    if (computerChoice === getHumanChoice){
+        console.log("It's a tie!");
+    }
 }
 
 
