@@ -42,18 +42,9 @@ function determineWinner(computerChoice, humanChoice) {
 
 function gamePlay(){
     playerTurn = true;
-    player1 = getComputerChoice();
-    player2 = getHumanChoice();
-
+    
     while(playerTurn) {
-        if(getComputerChoice === "rock" && getHumanChoice == "scissors"){
-            console.log("rock breaks scissors /n")
-            console.log("computer wins")
-        }
-        else{
-            console.log("Human player wins")
-        }
-
+       
     }
 
     
