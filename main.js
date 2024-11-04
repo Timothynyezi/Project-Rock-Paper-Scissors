@@ -44,8 +44,11 @@ function gamePlay(){
     playerTurn = true;
     
     while(playerTurn) {
-       
-    }
+       let computerChoice = getComputerChoice();
+       let humanChoice = getHumanChoice();
 
-    
+       determineWinner(computerChoice, humanChoice);
+
+       playerTurn = confirm("Do you want to play again?");
+    }   
 }
