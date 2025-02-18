@@ -32,7 +32,8 @@ function determineWinner(computerChoice, humanChoice) {
         (computerChoice === "paper" && humanChoice === "rock") || 
         (computerChoice === "scissors" && humanChoice === "paper")
     ) {
-        
+        console.log("Computer wins!");
+        computerScore ++;
     }
 }
 
