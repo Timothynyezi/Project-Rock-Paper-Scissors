@@ -9,10 +9,6 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    let choice1 = "rock";
-    let choice2 = "paper";
-    let choice3 = "scissors";
-
     let selectChoice = prompt("Choose one of the options: Rock, Paper, Scissors: ").toLowerCase();
     
     if (["rock", "paper", "scissors"].includes(selectChoice)) {
