@@ -23,6 +23,9 @@ function getHumanChoice() {
     }
 }
 
+function determineWinner(computerChoice, humanChoice) {
+    
+}
 
 function playRound(humanChoice,computerChoice){
         let playerTurn = true;
