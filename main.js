@@ -35,6 +35,10 @@ function determineWinner(computerChoice, humanChoice) {
         console.log("Computer wins!");
         computerScore ++;
     }
+    else {
+        console.log("You win!");
+        humanScore ++;
+    }
 }
 
 function playRound(humanChoice,computerChoice){
