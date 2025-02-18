@@ -45,8 +45,8 @@ function playRound(humanChoice,computerChoice){
         let playerTurn = true;
 
     while (playerTurn) {
-        let computerChoice = getComputerChoice();
-        let humanChoice = getHumanChoice();
+        const computerChoice = getComputerChoice();
+        const humanChoice = getHumanChoice();
 
         determineWinner(computerChoice, humanChoice);
 
