@@ -1,5 +1,6 @@
 let humanScore = 0;
 let computerScore = 0;
+
 function getComputerChoice() {
     let gameWords = ["rock", "paper", "scissors"];
     const choice = gameWords[Math.floor(Math.random() * gameWords.length)];
@@ -52,18 +53,6 @@ function playRound(humanChoice,computerChoice){
 
         playerTurn = confirm("Do you want to play again?"); // Ask if the player wants to play again
     }
-
-        if (computerChoice === humanChoice) {
-        console.log("It's a tie!");
-    } else if (
-        (computerChoice === "rock" && humanChoice === "scissors") ||
-        (computerChoice === "paper" && humanChoice === "rock") ||
-        (computerChoice === "scissors" && humanChoice === "paper")
-    ) {
-        console.log("Computer wins!");
-    } else {
-        console.log("You win!");
-    }
-    console.log(`Scores - You:${humanScore}, Computer: ${computerScore}`);
-
 }
+
+playRound();
