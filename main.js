@@ -23,16 +23,6 @@ function getHumanChoice() {
     }
 }
 
-// function determineWinner(computerChoice, humanChoice) {
-
-// }
-
-// function gamePlay() {
-
-// }
-
-// // To start the game, call the gamePlay function
-// gamePlay();
 
 function playRound(humanChoice,computerChoice){
         let playerTurn = true;
