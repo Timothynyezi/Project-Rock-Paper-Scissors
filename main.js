@@ -14,7 +14,7 @@ function getHumanChoice() {
 
     let selectChoice = prompt("Choose one of the options: Rock, Paper, Scissors: ").toLowerCase();
     
-    if (selectChoice === choice1 || selectChoice === choice2 || selectChoice === choice3) {
+    if (["rock", "paper", "scissors"].includes(selectChoice)) {
         console.log(`You chose: ${selectChoice}`);
         return selectChoice;
     } else {
