@@ -64,5 +64,6 @@ function playRound(humanChoice,computerChoice){
     } else {
         console.log("You win!");
     }
+    console.log(`Scores - You:${humanScore}, Computer: ${computerScore}`);
 
 }
