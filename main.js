@@ -24,7 +24,16 @@ function getHumanChoice() {
 }
 
 function determineWinner(computerChoice, humanChoice) {
-    
+    if (computerChoice === humanChoice) {
+        console.log("It's a tie!");
+    }
+    else if (
+        (computerChoice === "rock" && humanChoice === "scissors") ||
+        (computerChoice === "paper" && humanChoice === "rock") || 
+        (computerChoice === "scissors" && humanChoice === "paper")
+    ) {
+        
+    }
 }
 
 function playRound(humanChoice,computerChoice){
