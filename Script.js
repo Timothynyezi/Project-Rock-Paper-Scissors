@@ -6,23 +6,23 @@ const game = () => {
 }
 
 
-function getComputerChoice() {
-    let gameWords = ["rock", "paper", "scissors"];
-    const choice = gameWords[Math.floor(Math.random() * gameWords.length)];
-    console.log(`Computer chose: ${choice}`);
-    return choice;
-}
+const playGame = () => {
+    const rockBtn = document.querySelector(".rock");
+    const paperBtn = document.querySelector(".paper");
+    const scissorBtn = document.querySelector(".scissor");
+    const playerOptions = [rockBtn, paperBtn, scissorBtn];
+    const computerOptions = ["rock", "paper", "scissors"];
 
-function getHumanChoice() {
-    let selectChoice = prompt("Choose one of the options: Rock, Paper, Scissors: ").toLowerCase();
-    
-    if (["rock", "paper", "scissors"].includes(selectChoice)) {
-        console.log(`You chose: ${selectChoice}`);
-        return selectChoice;
-    } else {
-        console.log("Choose a valid option");
-        return getHumanChoice(); // Ask again if the input is invalid
-    }
+    playerOptions.forEach(option => {
+        option.addEventListener("click", function () {
+
+            const movesleft = document.querySelector(".movesleft");
+            moves ++;
+            movesleft.innerText = `Moves Lewft: ${5 - moves}`;
+
+            
+        })
+    })
 }
 
 function determineWinner(computerChoice, humanChoice) {
