@@ -39,5 +39,7 @@ const determineWinner = (player, computer) => {
     const computerScoreBoard = document.querySelector(".c-count");
     player = player.tolowerCase();
     computer = computer.tolowerCase();
-    
+    if (player === computer) {
+        result.textContent = "Tie";
+    }
 }
