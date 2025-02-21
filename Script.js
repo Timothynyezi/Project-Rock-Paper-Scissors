@@ -32,23 +32,7 @@ const playGame = () => {
     })
 }
 
-function determineWinner(computerChoice, humanChoice) {
-    if (computerChoice === humanChoice) {
-        console.log("It's a tie!");
-    }
-    else if (
-        (computerChoice === "rock" && humanChoice === "scissors") ||
-        (computerChoice === "paper" && humanChoice === "rock") || 
-        (computerChoice === "scissors" && humanChoice === "paper")
-    ) {
-        console.log("Computer wins!");
-        computerScore ++;
-    }
-    else {
-        console.log("You win!");
-        humanScore ++;
-    }
-}
+
 
 function playRound(humanChoice,computerChoice){
         let playerTurn = true;
