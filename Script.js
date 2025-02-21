@@ -33,18 +33,6 @@ const playGame = () => {
 }
 
 
-
-function playRound(humanChoice,computerChoice){
-        let playerTurn = true;
-
-    while (playerTurn) {
-        const computerChoice = getComputerChoice();
-        const humanChoice = getHumanChoice();
-
-        determineWinner(computerChoice, humanChoice);
-
-        playerTurn = confirm("Do you want to play again?"); // Ask if the player wants to play again
-    }
+const determineWinner = (palyer, computer) => {
+    
 }
-
-playRound();
