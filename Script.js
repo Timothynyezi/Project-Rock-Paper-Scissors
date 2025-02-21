@@ -30,7 +30,7 @@ const game = () => {
                 // Function to check who wins
                 winner(this.innerText, computerChoice)
 
-                // Calling gameOver function after 10 moves
+                // Calling gameOver function after 5 moves
                 if (moves == 5) {
                     gameOver(playerOptions, movesLeft);
                 }
