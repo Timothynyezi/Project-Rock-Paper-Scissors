@@ -49,4 +49,26 @@ const determineWinner = (player, computer) => {
             computerScoreBoard.textContent = computerScore;
         }
     }
+    else if (player == "scissors") {
+        if (computer == "rock") {
+            result.textContent = "Computer Won";
+            computerScore ++;
+            computerScoreBoard.textContent = computerScore;
+        } else {
+            result.textContent = "Player Won";
+            playerScore ++;
+            playerScoreBoard.textContent = playerScore;
+        }
+    } 
+    else if (player == "paper") {
+        if (computer == "scissors") {
+            result.textContent = "Computer Won";
+            computerScore ++;
+            computerScoreBoard.textContent = computerScore;
+        } else {
+            result.textContent = "Player Won";
+            playerScore ++;
+            playerScoreBoard.textContent = playerScore;
+        }
+    }
 }
