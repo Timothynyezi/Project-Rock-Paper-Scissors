@@ -20,7 +20,14 @@ const playGame = () => {
             moves ++;
             movesleft.innerText = `Moves Lewft: ${5 - moves}`;
 
-            
+            const choiceNumber = Math.floor(Math.random() * 3);
+            const computerChoice = computerOptions[choiceNumber];
+
+            determineWinner(this.innerText, computerChoice)
+
+            if (moves === 5) {
+                gameOver(playerOptions, movesleft)
+            }
         })
     })
 }
