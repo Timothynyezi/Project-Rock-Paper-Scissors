@@ -33,6 +33,11 @@ const playGame = () => {
 }
 
 
-const determineWinner = (palyer, computer) => {
+const determineWinner = (player, computer) => {
+    const result = document.querySelector(".result");
+    const playerScoreBoard = document.querySelector(".p-count");
+    const computerScoreBoard = document.querySelector(".c-count");
+    player = player.tolowerCase();
+    computer = computer.tolowerCase();
     
 }
