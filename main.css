@@ -4,8 +4,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: #082c6c;
-    color: #fff;
+    background: #0a866b;
+    color: #ffffff;
 }
 /* To center everything in game */
 .game{
@@ -21,7 +21,7 @@
 .title{
     position: absolute;
     top: 0;
-    font-size: 4rem;
+    font-size: 2rem;
     z-index: 2;
 }
 
@@ -98,3 +98,4 @@
     .options{
         width: 100vw;
     }
+}
