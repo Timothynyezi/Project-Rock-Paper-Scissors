@@ -1,5 +1,10 @@
-let humanScore = 0;
-let computerScore = 0;
+const game = () => {
+    let humanScore = 0;
+    let computerScore = 0;
+    let moves = 0;
+
+}
+
 
 function getComputerChoice() {
     let gameWords = ["rock", "paper", "scissors"];
