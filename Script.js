@@ -42,4 +42,11 @@ const determineWinner = (player, computer) => {
     if (player === computer) {
         result.textContent = "Tie";
     }
+    else if (player === "rock") {
+        if (computer == "paper") {
+            result.textContent = "computerScore";
+            computerScore ++;
+            computerScoreBoard.textContent = computerScore;
+        }
+    }
 }
